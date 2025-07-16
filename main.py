@@ -33,8 +33,21 @@ print(count_even([2, 4, 5, 6, 7, 19, 21])) # Output: 3
 # Find Maximum
 # Write a function that returns the maximum number in a list.
 
+def max_num(numbers):
+    max_val = float('-inf')
+    for num in numbers:
+        if num > max_val:
+            max_val = num
+
+    return max_val
+
+# Example usage:
+print(max_num([1, -4, 100, -2])) # Output: 100
+
 # Double Every Number
 # Write a function that takes a list and returns a new list where every number is doubled.
+
+
 
 # Remove Duplicates
 # Write a function that removes duplicates from a list and returns the result.
